@@ -254,10 +254,10 @@ def main():
         print("   2. python src/train_model.py")
         print("   3. python src/app.py\n")
     
-    print("\n🚀 Starting server at http://localhost:5000")
+    print("\n🚀 Starting server at http://localhost:8080")
     print("   Press Ctrl+C to stop\n")
     
-    app.run(host='0.0.0.0', port=5000, debug=False, threaded=True)
+    app.run(host='0.0.0.0', port=8080, debug=False, threaded=True)
 
 
 if __name__ == '__main__':

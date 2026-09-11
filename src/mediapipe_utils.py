@@ -54,13 +54,12 @@ def get_holistic_model():
         base_options=BaseOptions(model_asset_path=model_path),
         running_mode=RunningMode.IMAGE,
         output_face_blendshapes=False,
-        output_segmentation_masks=False,
+        output_segmentation_mask=False,
         min_face_detection_confidence=0.5,
-        min_face_presence_confidence=0.5,
-        min_hand_detection_confidence=0.5,
-        min_hand_presence_confidence=0.5,
+        min_face_landmarks_confidence=0.5,
+        min_hand_landmarks_confidence=0.5,
         min_pose_detection_confidence=0.5,
-        min_pose_presence_confidence=0.5,
+        min_pose_landmarks_confidence=0.5,
     )
     return HolisticLandmarker.create_from_options(options)
 
