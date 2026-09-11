@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Training Data (large files — collect locally)
+MP_Data/
+
+# Model Files (large — train locally)
+models/*.keras
+models/*.h5
+models/*.hdf5
+models/*.npy
+*.pb
+*.ckpt
+saved_model/
+
+# TensorBoard Logs
+Logs/
+logs/
+
+# Saved sentences
+saved_sentences.txt
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Media
+*.mp4
+*.avi
+*.mov
